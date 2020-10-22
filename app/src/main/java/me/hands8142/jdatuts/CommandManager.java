@@ -3,6 +3,9 @@ package me.hands8142.jdatuts;
 import me.hands8142.jdatuts.command.CommandContext;
 import me.hands8142.jdatuts.command.ICommand;
 import me.hands8142.jdatuts.command.commands.*;
+import me.hands8142.jdatuts.command.commands.info.BotInfoCommand;
+import me.hands8142.jdatuts.command.commands.info.GuildInfoCommand;
+import me.hands8142.jdatuts.command.commands.info.UserInfoCommand;
 import me.hands8142.jdatuts.command.commands.music.*;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 
@@ -23,6 +26,11 @@ public class CommandManager {
         addCommand(new FeedbackCommand());
         addCommand(new InstagramCommand());
 
+        //info
+        addCommand(new BotInfoCommand());
+        addCommand(new UserInfoCommand());
+        addCommand(new GuildInfoCommand());
+
         //music
         addCommand(new JoinCommand());
         addCommand(new LeaveCommand());
@@ -30,6 +38,8 @@ public class CommandManager {
         addCommand(new StopCommand());
         addCommand(new SkipCommand());
         addCommand(new MusicInfoCommand());
+        addCommand(new VolumeCommand());
+        addCommand(new PauseCommand());
     }
 
     private void addCommand(ICommand cmd) {

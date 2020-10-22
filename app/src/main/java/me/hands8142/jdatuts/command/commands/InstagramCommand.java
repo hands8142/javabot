@@ -9,7 +9,6 @@ import me.hands8142.jdatuts.command.ICommand;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.TextChannel;
 
-import java.util.Collections;
 import java.util.List;
 
 public class InstagramCommand implements ICommand {

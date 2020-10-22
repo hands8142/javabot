@@ -65,6 +65,6 @@ public class MusicInfoCommand implements ICommand {
 
     @Override
     public List<String> getAliases() {
-        return List.of("musicInfo");
+        return List.of("musicinfo");
     }
 }
