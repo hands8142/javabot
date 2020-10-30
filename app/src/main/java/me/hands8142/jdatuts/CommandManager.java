@@ -25,6 +25,10 @@ public class CommandManager {
         addCommand(new BanCommand());
         addCommand(new FeedbackCommand());
         addCommand(new InstagramCommand());
+        addCommand(new WeatherCommand());
+        addCommand(new CoronaCommand());
+        addCommand(new MusicChartCommand());
+        addCommand(new NaverChartCommand());
 
         //info
         addCommand(new BotInfoCommand());
@@ -40,6 +44,7 @@ public class CommandManager {
         addCommand(new MusicInfoCommand());
         addCommand(new VolumeCommand());
         addCommand(new PauseCommand());
+        addCommand(new QueueCommand());
     }
 
     private void addCommand(ICommand cmd) {
